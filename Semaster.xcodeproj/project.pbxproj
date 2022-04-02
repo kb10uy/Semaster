@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A37FCC827EF2AD700825662 /* SemasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCC727EF2AD700825662 /* SemasterApp.swift */; };
+		3A37FCCA27EF2AD700825662 /* CheckinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCC927EF2AD700825662 /* CheckinsView.swift */; };
+		3A37FCCC27EF2ADA00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FCCB27EF2ADA00825662 /* Assets.xcassets */; };
+		3A37FCCF27EF2ADA00825662 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FCCE27EF2ADA00825662 /* PreviewAssets.xcassets */; };
+		3A37FCE927EF2ADA00825662 /* Semaster WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A37FCE827EF2ADA00825662 /* Semaster WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A37FCEE27EF2ADA00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FCED27EF2ADA00825662 /* Assets.xcassets */; };
+		3A37FCF427EF2ADB00825662 /* Semaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCF827EF2ADB00825662 /* SemasterApp.swift */; };
+		3A37FCFB27EF2ADB00825662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFA27EF2ADB00825662 /* ContentView.swift */; };
+		3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFC27EF2ADB00825662 /* NotificationController.swift */; };
+		3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFE27EF2ADB00825662 /* NotificationView.swift */; };
+		3A37FD0127EF2ADB00825662 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FD0027EF2ADB00825662 /* ComplicationController.swift */; };
+		3A37FD0327EF2ADB00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FD0227EF2ADB00825662 /* Assets.xcassets */; };
+		3A37FD0627EF2ADB00825662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */; };
+		3A4936E727F80DF90042C2BE /* PreviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4936E627F80DF90042C2BE /* PreviewModels.swift */; };
+		3A49370827F81C0C0042C2BE /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370727F81C0C0042C2BE /* Formatters.swift */; };
+		3A49370A27F84A0E0042C2BE /* CheckinActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370927F84A0E0042C2BE /* CheckinActions.swift */; };
+		3A49370C27F853BB0042C2BE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370B27F853BB0042C2BE /* Errors.swift */; };
+		3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */; };
+		3AE7D7A327F341C500D4691C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A527F341C500D4691C /* Localizable.strings */; };
+		3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A927F3450200D4691C /* DetailsView.swift */; };
+		3AEB2A1727F610AF0067D1ED /* Semaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB2A1527F610AF0067D1ED /* Semaster.xcdatamodeld */; };
+		3AEB2A1927F6124A0067D1ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB2A1827F6124A0067D1ED /* Persistence.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A37FCEA27EF2ADA00825662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A37FCBC27EF2AD700825662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A37FCE727EF2ADA00825662;
+			remoteInfo = "Semaster WatchKit App";
+		};
+		3A37FCF527EF2ADB00825662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A37FCBC27EF2AD700825662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A37FCF227EF2ADB00825662;
+			remoteInfo = "Semaster WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A37FD2427EF2ADB00825662 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A37FCF427EF2ADB00825662 /* Semaster WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37FD2827EF2ADB00825662 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3A37FCE927EF2ADA00825662 /* Semaster WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A37FCC427EF2AD700825662 /* Semaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A37FCC727EF2AD700825662 /* SemasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemasterApp.swift; sourceTree = "<group>"; };
+		3A37FCC927EF2AD700825662 /* CheckinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinsView.swift; sourceTree = "<group>"; };
+		3A37FCCB27EF2ADA00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A37FCCE27EF2ADA00825662 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
+		3A37FCE827EF2ADA00825662 /* Semaster WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Semaster WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A37FCED27EF2ADA00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Semaster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A37FCF827EF2ADB00825662 /* SemasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemasterApp.swift; sourceTree = "<group>"; };
+		3A37FCFA27EF2ADB00825662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A37FCFC27EF2ADB00825662 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3A37FCFE27EF2ADB00825662 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3A37FD0027EF2ADB00825662 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3A37FD0227EF2ADB00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A37FD0727EF2ADB00825662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3A4936E627F80DF90042C2BE /* PreviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModels.swift; sourceTree = "<group>"; };
+		3A49370727F81C0C0042C2BE /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		3A49370927F84A0E0042C2BE /* CheckinActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinActions.swift; sourceTree = "<group>"; };
+		3A49370B27F853BB0042C2BE /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRow.swift; sourceTree = "<group>"; };
+		3AE7D7A427F341C500D4691C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AE7D7A627F341CC00D4691C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3AE7D7A927F3450200D4691C /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		3AEB2A1627F610AF0067D1ED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3AEB2A1827F6124A0067D1ED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A37FCC127EF2AD700825662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37FCF027EF2ADB00825662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A37FCBB27EF2AD700825662 = {
+			isa = PBXGroup;
+			children = (
+				3A37FCC627EF2AD700825662 /* Semaster */,
+				3A37FCEC27EF2ADA00825662 /* Semaster WatchKit App */,
+				3A37FCF727EF2ADB00825662 /* Semaster WatchKit Extension */,
+				3A37FCC527EF2AD700825662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A37FCC527EF2AD700825662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCC427EF2AD700825662 /* Semaster.app */,
+				3A37FCE827EF2ADA00825662 /* Semaster WatchKit App.app */,
+				3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A37FCC627EF2AD700825662 /* Semaster */ = {
+			isa = PBXGroup;
+			children = (
+				3AE6AE7227F030D500B3C9F8 /* Resources */,
+				3AE6AE6D27EF3B7300B3C9F8 /* Views */,
+				3AE6AE6C27EF3B6A00B3C9F8 /* Models */,
+				3A37FCCD27EF2ADA00825662 /* Preview */,
+				3A37FCC727EF2AD700825662 /* SemasterApp.swift */,
+			);
+			path = Semaster;
+			sourceTree = "<group>";
+		};
+		3A37FCCD27EF2ADA00825662 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCCE27EF2ADA00825662 /* PreviewAssets.xcassets */,
+				3A4936E627F80DF90042C2BE /* PreviewModels.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		3A37FCEC27EF2ADA00825662 /* Semaster WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCED27EF2ADA00825662 /* Assets.xcassets */,
+			);
+			path = "Semaster WatchKit App";
+			sourceTree = "<group>";
+		};
+		3A37FCF727EF2ADB00825662 /* Semaster WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCF827EF2ADB00825662 /* SemasterApp.swift */,
+				3A37FCFA27EF2ADB00825662 /* ContentView.swift */,
+				3A37FCFC27EF2ADB00825662 /* NotificationController.swift */,
+				3A37FCFE27EF2ADB00825662 /* NotificationView.swift */,
+				3A37FD0027EF2ADB00825662 /* ComplicationController.swift */,
+				3A37FD0227EF2ADB00825662 /* Assets.xcassets */,
+				3A37FD0727EF2ADB00825662 /* Info.plist */,
+				3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */,
+				3A37FD0427EF2ADB00825662 /* Preview Content */,
+			);
+			path = "Semaster WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3A37FD0427EF2ADB00825662 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AE6AE6C27EF3B6A00B3C9F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AEB2A1527F610AF0067D1ED /* Semaster.xcdatamodeld */,
+				3AEB2A1827F6124A0067D1ED /* Persistence.swift */,
+				3A49370927F84A0E0042C2BE /* CheckinActions.swift */,
+				3A49370B27F853BB0042C2BE /* Errors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AE6AE6D27EF3B7300B3C9F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCC927EF2AD700825662 /* CheckinsView.swift */,
+				3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */,
+				3AE7D7A927F3450200D4691C /* DetailsView.swift */,
+				3A49370727F81C0C0042C2BE /* Formatters.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AE6AE7227F030D500B3C9F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCCB27EF2ADA00825662 /* Assets.xcassets */,
+				3AE7D7A527F341C500D4691C /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A37FCC327EF2AD700825662 /* Semaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A37FD2927EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster" */;
+			buildPhases = (
+				3A37FCC027EF2AD700825662 /* Sources */,
+				3A37FCC127EF2AD700825662 /* Frameworks */,
+				3A37FCC227EF2AD700825662 /* Resources */,
+				3A37FD2827EF2ADB00825662 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A37FCEB27EF2ADA00825662 /* PBXTargetDependency */,
+			);
+			name = Semaster;
+			productName = Semaster;
+			productReference = 3A37FCC427EF2AD700825662 /* Semaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A37FCE727EF2ADA00825662 /* Semaster WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A37FD2527EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster WatchKit App" */;
+			buildPhases = (
+				3A37FCE627EF2ADA00825662 /* Resources */,
+				3A37FD2427EF2ADB00825662 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A37FCF627EF2ADB00825662 /* PBXTargetDependency */,
+			);
+			name = "Semaster WatchKit App";
+			productName = "Semaster WatchKit App";
+			productReference = 3A37FCE827EF2ADA00825662 /* Semaster WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3A37FCF227EF2ADB00825662 /* Semaster WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A37FD2127EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster WatchKit Extension" */;
+			buildPhases = (
+				3A37FCEF27EF2ADB00825662 /* Sources */,
+				3A37FCF027EF2ADB00825662 /* Frameworks */,
+				3A37FCF127EF2ADB00825662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Semaster WatchKit Extension";
+			productName = "Semaster WatchKit Extension";
+			productReference = 3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A37FCBC27EF2AD700825662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3A37FCC327EF2AD700825662 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3A37FCE727EF2ADA00825662 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3A37FCF227EF2ADB00825662 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 3A37FCBF27EF2AD700825662 /* Build configuration list for PBXProject "Semaster" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 3A37FCBB27EF2AD700825662;
+			productRefGroup = 3A37FCC527EF2AD700825662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A37FCC327EF2AD700825662 /* Semaster */,
+				3A37FCE727EF2ADA00825662 /* Semaster WatchKit App */,
+				3A37FCF227EF2ADB00825662 /* Semaster WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A37FCC227EF2AD700825662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37FCCF27EF2ADA00825662 /* PreviewAssets.xcassets in Resources */,
+				3AE7D7A327F341C500D4691C /* Localizable.strings in Resources */,
+				3A37FCCC27EF2ADA00825662 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37FCE627EF2ADA00825662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37FCEE27EF2ADA00825662 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37FCF127EF2ADB00825662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37FD0627EF2ADB00825662 /* Preview Assets.xcassets in Resources */,
+				3A37FD0327EF2ADB00825662 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A37FCC027EF2AD700825662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */,
+				3A49370A27F84A0E0042C2BE /* CheckinActions.swift in Sources */,
+				3A37FCCA27EF2AD700825662 /* CheckinsView.swift in Sources */,
+				3A49370827F81C0C0042C2BE /* Formatters.swift in Sources */,
+				3A37FCC827EF2AD700825662 /* SemasterApp.swift in Sources */,
+				3AEB2A1727F610AF0067D1ED /* Semaster.xcdatamodeld in Sources */,
+				3A49370C27F853BB0042C2BE /* Errors.swift in Sources */,
+				3A4936E727F80DF90042C2BE /* PreviewModels.swift in Sources */,
+				3AEB2A1927F6124A0067D1ED /* Persistence.swift in Sources */,
+				3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A37FCEF27EF2ADB00825662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */,
+				3A37FCFB27EF2ADB00825662 /* ContentView.swift in Sources */,
+				3A37FD0127EF2ADB00825662 /* ComplicationController.swift in Sources */,
+				3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */,
+				3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A37FCEB27EF2ADA00825662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A37FCE727EF2ADA00825662 /* Semaster WatchKit App */;
+			targetProxy = 3A37FCEA27EF2ADA00825662 /* PBXContainerItemProxy */;
+		};
+		3A37FCF627EF2ADB00825662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A37FCF227EF2ADB00825662 /* Semaster WatchKit Extension */;
+			targetProxy = 3A37FCF527EF2ADB00825662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AE7D7A527F341C500D4691C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AE7D7A427F341C500D4691C /* ja */,
+				3AE7D7A627F341CC00D4691C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A37FD1F27EF2ADB00825662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A37FD2027EF2ADB00825662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3A37FD2227EF2ADB00825662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Semaster WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Semaster WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		3A37FD2327EF2ADB00825662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Semaster WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Semaster WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		3A37FD2627EF2ADB00825662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Semaster_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = Semaster;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.kb10uy.Semaster;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		3A37FD2727EF2ADB00825662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Semaster_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = Semaster;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = org.kb10uy.Semaster;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		3A37FD2A27EF2ADB00825662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview Content\"";
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A37FD2B27EF2ADB00825662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview Content\"";
+				DEVELOPMENT_TEAM = FQS7HS74DX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kb10uy.Semaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A37FCBF27EF2AD700825662 /* Build configuration list for PBXProject "Semaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A37FD1F27EF2ADB00825662 /* Debug */,
+				3A37FD2027EF2ADB00825662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A37FD2127EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A37FD2227EF2ADB00825662 /* Debug */,
+				3A37FD2327EF2ADB00825662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A37FD2527EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A37FD2627EF2ADB00825662 /* Debug */,
+				3A37FD2727EF2ADB00825662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A37FD2927EF2ADB00825662 /* Build configuration list for PBXNativeTarget "Semaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A37FD2A27EF2ADB00825662 /* Debug */,
+				3A37FD2B27EF2ADB00825662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AEB2A1527F610AF0067D1ED /* Semaster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AEB2A1627F610AF0067D1ED /* Model.xcdatamodel */,
+			);
+			currentVersion = 3AEB2A1627F610AF0067D1ED /* Model.xcdatamodel */;
+			path = Semaster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A37FCBC27EF2AD700825662 /* Project object */;
+}

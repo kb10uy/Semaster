@@ -1,0 +1,14 @@
+"Title.Checkins" = "Checkins";
+"Title.Details" = "Details";
+"Title.AddCheckin" = "Commit new checkin";
+
+"Caption.Summary" = "Summary";
+"Caption.Comment" = "Comment";
+"Caption.Quality" = "Quality";
+"Caption.Amount" = "Amount";
+
+"Action.Add" = "Add";
+"Action.OK" = "OK";
+"Action.Retry" = "Retry";
+
+"Error.FailedToAdd" = "Failed to add new checkin";

@@ -1,0 +1,14 @@
+"Title.Checkins" = "チェックイン";
+"Title.Details" = "詳細";
+"Title.AddCheckin" = "新しいチェックイン";
+
+"Caption.Summary" = "概要";
+"Caption.Comment" = "コメント";
+"Caption.Quality" = "質";
+"Caption.Amount" = "量";
+
+"Action.Add" = "追加";
+"Action.OK" = "OK";
+"Action.Retry" = "リトライ";
+
+"Error.FailedToAdd" = "チェックイン追加に失敗しました";
