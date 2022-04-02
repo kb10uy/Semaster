@@ -13,13 +13,18 @@ struct CheckinsView: View {
     private var checkins: FetchedResults<Checkin>
     
     @State private var showingModal: Bool = false
+    @State private var showingFailure: Bool = false
+    @State private var deletionError: SemasterError? = nil
     
     var body: some View {
         NavigationView {
-            List(checkins) { checkin in
-                NavigationLink(destination: DetailsView(checkin: checkin)) {
-                    CheckinRow(checkin: checkin)
+            List {
+                ForEach(checkins) { checkin in
+                    NavigationLink(destination: DetailsView(checkin: checkin)) {
+                        CheckinRow(checkin: checkin)
+                    }
                 }
+                .onDelete(perform: deleteCheckins)
             }
             .navigationTitle("Title.Checkins")
             .listStyle(PlainListStyle())
@@ -37,6 +42,24 @@ struct CheckinsView: View {
                 }
             }
         }
+    }
+    
+    private func deleteCheckins(checkinIndices: IndexSet) {
+        do {
+            for index in checkinIndices {
+                context.delete(checkins[index])
+            }
+            try context.save()
+        } catch {
+            let nsError = error as NSError
+            deletionError = SemasterError(
+                nsError: nsError,
+                title: NSLocalizedString("Error.FailedToAdd", comment: "Failure"),
+                recovery: NSLocalizedString("Action.OK", comment: "OK")
+            )
+            showingFailure = true
+        }
+        
     }
 }
 

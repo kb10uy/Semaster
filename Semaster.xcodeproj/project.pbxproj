@@ -25,6 +25,7 @@
 		3A49370827F81C0C0042C2BE /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370727F81C0C0042C2BE /* Formatters.swift */; };
 		3A49370A27F84A0E0042C2BE /* CheckinActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370927F84A0E0042C2BE /* CheckinActions.swift */; };
 		3A49370C27F853BB0042C2BE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370B27F853BB0042C2BE /* Errors.swift */; };
+		3A49371227F880280042C2BE /* CircularGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371127F880280042C2BE /* CircularGauge.swift */; };
 		3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */; };
 		3AE7D7A327F341C500D4691C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A527F341C500D4691C /* Localizable.strings */; };
 		3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A927F3450200D4691C /* DetailsView.swift */; };
@@ -96,6 +97,7 @@
 		3A49370727F81C0C0042C2BE /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		3A49370927F84A0E0042C2BE /* CheckinActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinActions.swift; sourceTree = "<group>"; };
 		3A49370B27F853BB0042C2BE /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		3A49371127F880280042C2BE /* CircularGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGauge.swift; sourceTree = "<group>"; };
 		3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRow.swift; sourceTree = "<group>"; };
 		3AE7D7A427F341C500D4691C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AE7D7A627F341CC00D4691C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -174,11 +176,9 @@
 		3A37FCF727EF2ADB00825662 /* Semaster WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3A49371027F8800D0042C2BE /* Models */,
+				3A49370F27F87FFE0042C2BE /* Views */,
 				3A37FCF827EF2ADB00825662 /* SemasterApp.swift */,
-				3A37FCFA27EF2ADB00825662 /* ContentView.swift */,
-				3A37FCFC27EF2ADB00825662 /* NotificationController.swift */,
-				3A37FCFE27EF2ADB00825662 /* NotificationView.swift */,
-				3A37FD0027EF2ADB00825662 /* ComplicationController.swift */,
 				3A37FD0227EF2ADB00825662 /* Assets.xcassets */,
 				3A37FD0727EF2ADB00825662 /* Info.plist */,
 				3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */,
@@ -193,6 +193,25 @@
 				3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3A49370F27F87FFE0042C2BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FCFE27EF2ADB00825662 /* NotificationView.swift */,
+				3A37FCFA27EF2ADB00825662 /* ContentView.swift */,
+				3A49371127F880280042C2BE /* CircularGauge.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A49371027F8800D0042C2BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FD0027EF2ADB00825662 /* ComplicationController.swift */,
+				3A37FCFC27EF2ADB00825662 /* NotificationController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3AE6AE6C27EF3B6A00B3C9F8 /* Models */ = {
@@ -380,6 +399,7 @@
 				3A37FCFB27EF2ADB00825662 /* ContentView.swift in Sources */,
 				3A37FD0127EF2ADB00825662 /* ComplicationController.swift in Sources */,
 				3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */,
+				3A49371227F880280042C2BE /* CircularGauge.swift in Sources */,
 				3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,7 +666,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview\"";
 				DEVELOPMENT_TEAM = FQS7HS74DX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -677,7 +697,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster/Preview\"";
 				DEVELOPMENT_TEAM = FQS7HS74DX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
