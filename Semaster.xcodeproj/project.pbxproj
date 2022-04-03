@@ -15,7 +15,7 @@
 		3A37FCEE27EF2ADA00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FCED27EF2ADA00825662 /* Assets.xcassets */; };
 		3A37FCF427EF2ADB00825662 /* Semaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCF827EF2ADB00825662 /* SemasterApp.swift */; };
-		3A37FCFB27EF2ADB00825662 /* QualityEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */; };
+		3A37FCFB27EF2ADB00825662 /* EditCheckinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFA27EF2ADB00825662 /* EditCheckinView.swift */; };
 		3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFC27EF2ADB00825662 /* NotificationController.swift */; };
 		3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFE27EF2ADB00825662 /* NotificationView.swift */; };
 		3A37FD0327EF2ADB00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FD0227EF2ADB00825662 /* Assets.xcassets */; };
@@ -27,9 +27,9 @@
 		3A49371227F880280042C2BE /* CircularGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371127F880280042C2BE /* CircularGauge.swift */; };
 		3A49371427F949110042C2BE /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371327F949110042C2BE /* WatchController.swift */; };
 		3A49371827F956B00042C2BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A49371A27F956B00042C2BE /* Localizable.strings */; };
-		3A49371D27F95CDD0042C2BE /* AmountEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371C27F95CDD0042C2BE /* AmountEditView.swift */; };
 		3A49371F27F960820042C2BE /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371E27F960820042C2BE /* WatchController.swift */; };
 		3A49372127F964310042C2BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49372027F964310042C2BE /* HomeView.swift */; };
+		3AB12D4B27F97CCD00740352 /* CheckinProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB12D4A27F97CCD00740352 /* CheckinProperty.swift */; };
 		3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */; };
 		3AE7D7A327F341C500D4691C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A527F341C500D4691C /* Localizable.strings */; };
 		3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A927F3450200D4691C /* DetailsView.swift */; };
@@ -89,7 +89,7 @@
 		3A37FCED27EF2ADA00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Semaster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A37FCF827EF2ADB00825662 /* SemasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemasterApp.swift; sourceTree = "<group>"; };
-		3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityEditView.swift; sourceTree = "<group>"; };
+		3A37FCFA27EF2ADB00825662 /* EditCheckinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCheckinView.swift; sourceTree = "<group>"; };
 		3A37FCFC27EF2ADB00825662 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3A37FCFE27EF2ADB00825662 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		3A37FD0227EF2ADB00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		3A49371327F949110042C2BE /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
 		3A49371927F956B00042C2BE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3A49371B27F956B80042C2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3A49371C27F95CDD0042C2BE /* AmountEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEditView.swift; sourceTree = "<group>"; };
 		3A49371E27F960820042C2BE /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
 		3A49372027F964310042C2BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3AB12D4A27F97CCD00740352 /* CheckinProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinProperty.swift; sourceTree = "<group>"; };
 		3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRow.swift; sourceTree = "<group>"; };
 		3AE7D7A427F341C500D4691C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AE7D7A627F341CC00D4691C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -157,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3AE6AE7227F030D500B3C9F8 /* Resources */,
+				3AB12D4D27F97E0900740352 /* Components */,
 				3AE6AE6D27EF3B7300B3C9F8 /* Views */,
 				3AE6AE6C27EF3B6A00B3C9F8 /* Models */,
 				3A37FCCD27EF2ADA00825662 /* Preview */,
@@ -186,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				3A49371527F954280042C2BE /* Resources */,
+				3AB12D4C27F97DDB00740352 /* Components */,
 				3A49370F27F87FFE0042C2BE /* Views */,
 				3A49371027F8800D0042C2BE /* Models */,
 				3A37FD0427EF2ADB00825662 /* Preview */,
@@ -208,9 +210,7 @@
 			children = (
 				3A37FCFE27EF2ADB00825662 /* NotificationView.swift */,
 				3A49372027F964310042C2BE /* HomeView.swift */,
-				3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */,
-				3A49371C27F95CDD0042C2BE /* AmountEditView.swift */,
-				3A49371127F880280042C2BE /* CircularGauge.swift */,
+				3A37FCFA27EF2ADB00825662 /* EditCheckinView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +234,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3AB12D4C27F97DDB00740352 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A49371127F880280042C2BE /* CircularGauge.swift */,
+				3AB12D4A27F97CCD00740352 /* CheckinProperty.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3AB12D4D27F97E0900740352 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A49370727F81C0C0042C2BE /* Formatters.swift */,
+				3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		3AE6AE6C27EF3B6A00B3C9F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,9 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				3A37FCC927EF2AD700825662 /* CheckinsView.swift */,
-				3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */,
 				3AE7D7A927F3450200D4691C /* DetailsView.swift */,
-				3A49370727F81C0C0042C2BE /* Formatters.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,8 +435,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */,
-				3A37FCFB27EF2ADB00825662 /* QualityEditView.swift in Sources */,
-				3A49371D27F95CDD0042C2BE /* AmountEditView.swift in Sources */,
+				3A37FCFB27EF2ADB00825662 /* EditCheckinView.swift in Sources */,
+				3AB12D4B27F97CCD00740352 /* CheckinProperty.swift in Sources */,
 				3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */,
 				3A49371F27F960820042C2BE /* WatchController.swift in Sources */,
 				3A49372127F964310042C2BE /* HomeView.swift in Sources */,

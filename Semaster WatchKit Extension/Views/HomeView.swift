@@ -31,7 +31,7 @@ struct HomeView: View {
 
                 Spacer()
                 
-                NavigationLink(destination: QualityEditView()) {
+                NavigationLink(destination: EditCheckinView()) {
                     Text("Action.Checkin")
                 }
             }
