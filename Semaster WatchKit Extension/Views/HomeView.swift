@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @AppStorage("CheckinsCount")
+    private var checkinsCount = 0
+    
+    @AppStorage("LastCheckinDate")
+    private var lastCheckinDate: String = ""
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -12,7 +18,7 @@ struct HomeView: View {
                     }
                     HStack {
                         Spacer()
-                        Text("0")
+                        Text("\(checkinsCount)")
                             .font(.title2)
                     }
                 }
@@ -24,7 +30,7 @@ struct HomeView: View {
                     }
                     HStack {
                         Spacer()
-                        Text("2022/12/31 23:59")
+                        Text(lastCheckinDate)
                             .font(.title3)
                     }
                 }

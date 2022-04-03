@@ -23,7 +23,7 @@ final class WatchController: NSObject, WCSessionDelegate {
         switch messageType {
         case "Checkin":
             do {
-                try doCheckin(message: message)
+                try checkinReceived(message: message)
             } catch {
                 let error = error as NSError
                 print("Checkin commit error: \(error.localizedDescription)")
@@ -41,7 +41,14 @@ final class WatchController: NSObject, WCSessionDelegate {
     
     // MARK: - Common function
     
-    private func doCheckin(message: [String: Any]) throws {
+    func sendStatus(count: Int, lastDate: String) throws {
+        try WCSession.default.updateApplicationContext([
+            "count": count,
+            "last_checkin": lastDate,
+        ])
+    }
+    
+    private func checkinReceived(message: [String: Any]) throws {
         let viewContext = PersistenceController.shared.container.viewContext
         try insertCheckin(
             viewContext: viewContext,
@@ -49,5 +56,6 @@ final class WatchController: NSObject, WCSessionDelegate {
             amount: message["amount"] as! Double,
             comment: message["comment"] as! String
         )
+        try updateWatchStatus(viewContext: viewContext)
     }
 }

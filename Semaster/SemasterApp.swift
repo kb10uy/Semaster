@@ -2,8 +2,8 @@ import SwiftUI
 
 @main
 struct SemasterApp: App {
-    let persistenceController = PersistenceController.shared
-    let watchController = WatchController.shared
+    private let persistenceController = PersistenceController.shared
+    private let watchController = WatchController.shared
     
     var body: some Scene {
         WindowGroup {

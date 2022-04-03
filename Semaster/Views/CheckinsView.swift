@@ -50,6 +50,7 @@ struct CheckinsView: View {
                 context.delete(checkins[index])
             }
             try context.save()
+            try updateWatchStatus(viewContext: context)
         } catch {
             let nsError = error as NSError
             deletionError = SemasterError(
@@ -144,6 +145,7 @@ struct AddCheckinModal: View {
                 amount: amountValue,
                 comment: commentValue
             )
+            try updateWatchStatus(viewContext: context)
             reset()
             dismiss()
         } catch {

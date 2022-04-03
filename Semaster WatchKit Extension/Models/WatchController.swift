@@ -18,6 +18,14 @@ final class WatchController: NSObject, WCSessionDelegate {
         // Some message on session activation
     }
     
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        let count = applicationContext["count"] as? Int ?? 0
+        let lastCheckin = applicationContext["last_checkin"] as? String ?? "Invalid"
+        
+        UserDefaults.standard.set(count, forKey: "CheckinsCount")
+        UserDefaults.standard.set(lastCheckin, forKey: "LastCheckinDate")
+    }
+    
     // MARK: - Common functions
     
     func sendCheckinMessage(quality: Double, amount: Double, comment: String) throws {

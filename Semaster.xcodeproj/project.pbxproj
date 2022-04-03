@@ -380,8 +380,8 @@
 			projectRoot = "";
 			targets = (
 				3A37FCC327EF2AD700825662 /* Semaster */,
-				3A37FCE727EF2ADA00825662 /* Semaster WatchKit App */,
 				3A37FCF227EF2ADB00825662 /* Semaster WatchKit Extension */,
+				3A37FCE727EF2ADA00825662 /* Semaster WatchKit App */,
 			);
 		};
 /* End PBXProject section */
