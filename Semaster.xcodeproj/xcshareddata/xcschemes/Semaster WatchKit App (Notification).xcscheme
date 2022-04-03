@@ -54,10 +54,11 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
-      launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "Semaster WatchKit Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      launchAutomaticallySubstyle = "8">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Semaster">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A37FCE727EF2ADA00825662"
@@ -65,7 +66,7 @@
             BlueprintName = "Semaster WatchKit App"
             ReferencedContainer = "container:Semaster.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -73,10 +74,11 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
-      launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "Semaster WatchKit Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      launchAutomaticallySubstyle = "8">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Semaster">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A37FCE727EF2ADA00825662"
@@ -84,7 +86,16 @@
             BlueprintName = "Semaster WatchKit App"
             ReferencedContainer = "container:Semaster.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3A37FCE727EF2ADA00825662"
+            BuildableName = "Semaster WatchKit App.app"
+            BlueprintName = "Semaster WatchKit App"
+            ReferencedContainer = "container:Semaster.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

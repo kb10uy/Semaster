@@ -1,0 +1,12 @@
+"Title.Home" = "Semaster";
+"Title.Quality" = "質の設定";
+"Title.Amount" = "量の設定";
+
+"Caption.Checkins" = "回数";
+"Caption.LastCheckin" = "最終チェックイン";
+"Caption.Quality" = "質";
+"Caption.Amount" = "量";
+
+"Action.Checkin" = "チェックイン";
+"Action.Next" = "次へ";
+"Action.Commit" = "追加";

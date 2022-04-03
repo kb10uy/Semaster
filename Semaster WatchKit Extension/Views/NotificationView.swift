@@ -1,10 +1,3 @@
-//
-//  NotificationView.swift
-//  Semaster WatchKit Extension
-//
-//  Created by Yū Kobayashi on 2022/03/26.
-//
-
 import SwiftUI
 
 struct NotificationView: View {

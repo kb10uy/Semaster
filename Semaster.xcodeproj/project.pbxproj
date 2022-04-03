@@ -15,22 +15,26 @@
 		3A37FCEE27EF2ADA00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FCED27EF2ADA00825662 /* Assets.xcassets */; };
 		3A37FCF427EF2ADB00825662 /* Semaster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCF827EF2ADB00825662 /* SemasterApp.swift */; };
-		3A37FCFB27EF2ADB00825662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFA27EF2ADB00825662 /* ContentView.swift */; };
+		3A37FCFB27EF2ADB00825662 /* QualityEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */; };
 		3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFC27EF2ADB00825662 /* NotificationController.swift */; };
 		3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FCFE27EF2ADB00825662 /* NotificationView.swift */; };
-		3A37FD0127EF2ADB00825662 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A37FD0027EF2ADB00825662 /* ComplicationController.swift */; };
 		3A37FD0327EF2ADB00825662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FD0227EF2ADB00825662 /* Assets.xcassets */; };
 		3A37FD0627EF2ADB00825662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */; };
 		3A4936E727F80DF90042C2BE /* PreviewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4936E627F80DF90042C2BE /* PreviewModels.swift */; };
 		3A49370827F81C0C0042C2BE /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370727F81C0C0042C2BE /* Formatters.swift */; };
-		3A49370A27F84A0E0042C2BE /* CheckinActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370927F84A0E0042C2BE /* CheckinActions.swift */; };
+		3A49370A27F84A0E0042C2BE /* Checkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370927F84A0E0042C2BE /* Checkins.swift */; };
 		3A49370C27F853BB0042C2BE /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49370B27F853BB0042C2BE /* Errors.swift */; };
 		3A49371227F880280042C2BE /* CircularGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371127F880280042C2BE /* CircularGauge.swift */; };
+		3A49371427F949110042C2BE /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371327F949110042C2BE /* WatchController.swift */; };
+		3A49371827F956B00042C2BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A49371A27F956B00042C2BE /* Localizable.strings */; };
+		3A49371D27F95CDD0042C2BE /* AmountEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371C27F95CDD0042C2BE /* AmountEditView.swift */; };
+		3A49371F27F960820042C2BE /* WatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49371E27F960820042C2BE /* WatchController.swift */; };
+		3A49372127F964310042C2BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49372027F964310042C2BE /* HomeView.swift */; };
 		3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */; };
 		3AE7D7A327F341C500D4691C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A527F341C500D4691C /* Localizable.strings */; };
 		3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7D7A927F3450200D4691C /* DetailsView.swift */; };
 		3AEB2A1727F610AF0067D1ED /* Semaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB2A1527F610AF0067D1ED /* Semaster.xcdatamodeld */; };
-		3AEB2A1927F6124A0067D1ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB2A1827F6124A0067D1ED /* Persistence.swift */; };
+		3AEB2A1927F6124A0067D1ED /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB2A1827F6124A0067D1ED /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,25 +89,30 @@
 		3A37FCED27EF2ADA00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A37FCF327EF2ADB00825662 /* Semaster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Semaster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A37FCF827EF2ADB00825662 /* SemasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemasterApp.swift; sourceTree = "<group>"; };
-		3A37FCFA27EF2ADB00825662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityEditView.swift; sourceTree = "<group>"; };
 		3A37FCFC27EF2ADB00825662 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		3A37FCFE27EF2ADB00825662 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		3A37FD0027EF2ADB00825662 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		3A37FD0227EF2ADB00825662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A37FD0727EF2ADB00825662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3A4936E627F80DF90042C2BE /* PreviewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModels.swift; sourceTree = "<group>"; };
 		3A49370727F81C0C0042C2BE /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
-		3A49370927F84A0E0042C2BE /* CheckinActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinActions.swift; sourceTree = "<group>"; };
+		3A49370927F84A0E0042C2BE /* Checkins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkins.swift; sourceTree = "<group>"; };
 		3A49370B27F853BB0042C2BE /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3A49371127F880280042C2BE /* CircularGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGauge.swift; sourceTree = "<group>"; };
+		3A49371327F949110042C2BE /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
+		3A49371927F956B00042C2BE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A49371B27F956B80042C2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A49371C27F95CDD0042C2BE /* AmountEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEditView.swift; sourceTree = "<group>"; };
+		3A49371E27F960820042C2BE /* WatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchController.swift; sourceTree = "<group>"; };
+		3A49372027F964310042C2BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3AE6AE7027EF434D00B3C9F8 /* CheckinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRow.swift; sourceTree = "<group>"; };
 		3AE7D7A427F341C500D4691C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AE7D7A627F341CC00D4691C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AE7D7A927F3450200D4691C /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		3AEB2A1627F610AF0067D1ED /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		3AEB2A1827F6124A0067D1ED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3AEB2A1827F6124A0067D1ED /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,30 +185,31 @@
 		3A37FCF727EF2ADB00825662 /* Semaster WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3A49371027F8800D0042C2BE /* Models */,
+				3A49371527F954280042C2BE /* Resources */,
 				3A49370F27F87FFE0042C2BE /* Views */,
+				3A49371027F8800D0042C2BE /* Models */,
+				3A37FD0427EF2ADB00825662 /* Preview */,
 				3A37FCF827EF2ADB00825662 /* SemasterApp.swift */,
-				3A37FD0227EF2ADB00825662 /* Assets.xcassets */,
 				3A37FD0727EF2ADB00825662 /* Info.plist */,
-				3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */,
-				3A37FD0427EF2ADB00825662 /* Preview Content */,
 			);
 			path = "Semaster WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		3A37FD0427EF2ADB00825662 /* Preview Content */ = {
+		3A37FD0427EF2ADB00825662 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
 				3A37FD0527EF2ADB00825662 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Preview;
 			sourceTree = "<group>";
 		};
 		3A49370F27F87FFE0042C2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3A37FCFE27EF2ADB00825662 /* NotificationView.swift */,
-				3A37FCFA27EF2ADB00825662 /* ContentView.swift */,
+				3A49372027F964310042C2BE /* HomeView.swift */,
+				3A37FCFA27EF2ADB00825662 /* QualityEditView.swift */,
+				3A49371C27F95CDD0042C2BE /* AmountEditView.swift */,
 				3A49371127F880280042C2BE /* CircularGauge.swift */,
 			);
 			path = Views;
@@ -208,18 +218,29 @@
 		3A49371027F8800D0042C2BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3A37FD0027EF2ADB00825662 /* ComplicationController.swift */,
 				3A37FCFC27EF2ADB00825662 /* NotificationController.swift */,
+				3A49371E27F960820042C2BE /* WatchController.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3A49371527F954280042C2BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A37FD0227EF2ADB00825662 /* Assets.xcassets */,
+				3A49371A27F956B00042C2BE /* Localizable.strings */,
+				3A37FD0827EF2ADB00825662 /* PushNotificationPayload.apns */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3AE6AE6C27EF3B6A00B3C9F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3AEB2A1527F610AF0067D1ED /* Semaster.xcdatamodeld */,
-				3AEB2A1827F6124A0067D1ED /* Persistence.swift */,
-				3A49370927F84A0E0042C2BE /* CheckinActions.swift */,
+				3AEB2A1827F6124A0067D1ED /* PersistenceController.swift */,
+				3A49371327F949110042C2BE /* WatchController.swift */,
+				3A49370927F84A0E0042C2BE /* Checkins.swift */,
 				3A49370B27F853BB0042C2BE /* Errors.swift */,
 			);
 			path = Models;
@@ -367,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A37FD0627EF2ADB00825662 /* Preview Assets.xcassets in Resources */,
+				3A49371827F956B00042C2BE /* Localizable.strings in Resources */,
 				3A37FD0327EF2ADB00825662 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,14 +401,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE6AE7127EF434D00B3C9F8 /* CheckinRow.swift in Sources */,
-				3A49370A27F84A0E0042C2BE /* CheckinActions.swift in Sources */,
+				3A49371427F949110042C2BE /* WatchController.swift in Sources */,
+				3A49370A27F84A0E0042C2BE /* Checkins.swift in Sources */,
 				3A37FCCA27EF2AD700825662 /* CheckinsView.swift in Sources */,
 				3A49370827F81C0C0042C2BE /* Formatters.swift in Sources */,
 				3A37FCC827EF2AD700825662 /* SemasterApp.swift in Sources */,
 				3AEB2A1727F610AF0067D1ED /* Semaster.xcdatamodeld in Sources */,
 				3A49370C27F853BB0042C2BE /* Errors.swift in Sources */,
 				3A4936E727F80DF90042C2BE /* PreviewModels.swift in Sources */,
-				3AEB2A1927F6124A0067D1ED /* Persistence.swift in Sources */,
+				3AEB2A1927F6124A0067D1ED /* PersistenceController.swift in Sources */,
 				3AE7D7AA27F3450200D4691C /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,9 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A37FCFD27EF2ADB00825662 /* NotificationController.swift in Sources */,
-				3A37FCFB27EF2ADB00825662 /* ContentView.swift in Sources */,
-				3A37FD0127EF2ADB00825662 /* ComplicationController.swift in Sources */,
+				3A37FCFB27EF2ADB00825662 /* QualityEditView.swift in Sources */,
+				3A49371D27F95CDD0042C2BE /* AmountEditView.swift in Sources */,
 				3A37FCF927EF2ADB00825662 /* SemasterApp.swift in Sources */,
+				3A49371F27F960820042C2BE /* WatchController.swift in Sources */,
+				3A49372127F964310042C2BE /* HomeView.swift in Sources */,
 				3A49371227F880280042C2BE /* CircularGauge.swift in Sources */,
 				3A37FCFF27EF2ADB00825662 /* NotificationView.swift in Sources */,
 			);
@@ -420,6 +445,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3A49371A27F956B00042C2BE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A49371927F956B00042C2BE /* ja */,
+				3A49371B27F956B80042C2BE /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		3AE7D7A527F341C500D4691C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -547,7 +581,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview\"";
 				DEVELOPMENT_TEAM = FQS7HS74DX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -579,7 +613,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Semaster WatchKit Extension/Preview\"";
 				DEVELOPMENT_TEAM = FQS7HS74DX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

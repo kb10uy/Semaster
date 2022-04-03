@@ -1,12 +1,6 @@
-//
-//  CircularGauge.swift
-//  Semaster WatchKit Extension
-//
-//  Created by Yū Kobayashi on 2022/04/02.
-//
-
 import SwiftUI
 
+/// Shows progress/value in circular stroke.
 struct CircularGauge: View {
     @Binding var value: CGFloat
     let width: CGFloat

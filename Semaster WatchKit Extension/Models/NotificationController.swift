@@ -1,10 +1,3 @@
-//
-//  NotificationController.swift
-//  Semaster WatchKit Extension
-//
-//  Created by Yū Kobayashi on 2022/03/26.
-//
-
 import WatchKit
 import SwiftUI
 import UserNotifications

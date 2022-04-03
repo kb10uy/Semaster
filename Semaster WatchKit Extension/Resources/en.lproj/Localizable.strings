@@ -1,0 +1,12 @@
+"Title.Home" = "Semaster";
+"Title.Quality" = "Edit Q.";
+"Title.Amount" = "Edit A.";
+
+"Caption.Checkins" = "Checkins";
+"Caption.LastCheckin" = "Last Checkin";
+"Caption.Quality" = "Quality";
+"Caption.Amount" = "Amount";
+
+"Action.Checkin" = "Checkin";
+"Action.Next" = "Proceed";
+"Action.Commit" = "Commit";
