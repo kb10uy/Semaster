@@ -1,12 +1,16 @@
 "Title.Home" = "Semaster";
-"Title.Quality" = "Edit Q.";
-"Title.Amount" = "Edit A.";
+"Title.Checkin" = "Checkin";
+"Title.Error" = "Error";
 
 "Caption.Checkins" = "Checkins";
 "Caption.LastCheckin" = "Last Checkin";
 "Caption.Quality" = "Quality";
 "Caption.Amount" = "Amount";
+"Caption.NoComment" = "(Unset)";
 
 "Action.Checkin" = "Checkin";
 "Action.Next" = "Proceed";
 "Action.Commit" = "Commit";
+
+"Error.Unreachable" = "Paired iPhone unreachable";
+"Error.Invalid" = "Invalid response detected";

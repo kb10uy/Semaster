@@ -11,13 +11,43 @@ final class WatchController: NSObject, WCSessionDelegate {
             WCSession.default.activate()
         }
     }
-
+    
+    // MARK: - WCSessionDelegate
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
     }
-
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String: Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        let messageType = message["type"] as? String ?? ""
+        
+        switch messageType {
+        case "Checkin":
+            do {
+                try doCheckin(message: message)
+            } catch {
+                let error = error as NSError
+                print("Checkin commit error: \(error.localizedDescription)")
+            }
+        default:
+            print("Unknown message type: \(messageType)")
+        }
+    }
+    
     func sessionDidBecomeInactive(_ session: WCSession) {
     }
-
+    
     func sessionDidDeactivate(_ session: WCSession) {
+    }
+    
+    // MARK: - Common function
+    
+    private func doCheckin(message: [String: Any]) throws {
+        let viewContext = PersistenceController.shared.container.viewContext
+        try insertCheckin(
+            viewContext: viewContext,
+            quality: message["quality"] as! Double,
+            amount: message["amount"] as! Double,
+            comment: message["comment"] as! String
+        )
     }
 }

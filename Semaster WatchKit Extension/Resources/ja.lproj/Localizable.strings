@@ -1,12 +1,16 @@
 "Title.Home" = "Semaster";
-"Title.Quality" = "質の設定";
-"Title.Amount" = "量の設定";
+"Title.Checkin" = "チェックイン";
+"Title.Error" = "エラー";
 
 "Caption.Checkins" = "回数";
 "Caption.LastCheckin" = "最終チェックイン";
 "Caption.Quality" = "質";
 "Caption.Amount" = "量";
+"Caption.NoComment" = "(設定しない)";
 
 "Action.Checkin" = "チェックイン";
 "Action.Next" = "次へ";
 "Action.Commit" = "追加";
+
+"Error.Unreachable" = "iPhone にアクセスできません";
+"Error.Invalid" = "不正なレスポンスです";
